@@ -1,0 +1,104 @@
+html, body{
+    margin: 0;
+}
+
+body{
+    background-image: url(../img/back.png);
+    /*cssから見た画像の場所。ここでは背景画像をしていしてみる*/
+    background-repeat: no-repeat;
+    /*no-repeatにしとかないとうじゃうじゃでちゃうっぽい*/
+    background-position: center;
+    /*中心に設置*/
+    background-attachment: fixed;
+    /*崩れないように固定！*/
+    background-size: cover;
+    /*縦横の比率をキープ！*/
+    background-color: #000000;
+    /*背景の色。とりあえず真っ黒で*/
+}
+
+.box{
+   color: white;
+   background-color: black;
+   /*背景*/
+   opacity: 0.8;
+   /*不透明度*/
+   width:1000px;
+   /*横幅*/
+   margin-right: auto;
+   margin-left : auto;
+   /*隙間*/
+   border: dashed 2px #5b8bd0;
+   /*点線*/
+   padding: 0.5em 1em;
+   /*淵との隙間*/
+}
+
+.link-box {
+	border:1px solid #e1e1e1;
+	padding:10px;
+	display:flex;
+	margin:30px;
+}
+
+.link-box:hover {
+	background-color:#f3f3f3;
+	-webkit-transition:background-color .35s;
+	transition:background-color .35s;
+}
+
+.img-box {
+	width:25%;
+	float:left;
+}
+
+.img-box div {
+	min-height:150px;
+	background-size:cover;
+	background-position:center center;
+}
+
+.text-box {
+	width:75%;
+	float:left;
+	padding-left:20px;
+	line-height:1.7;
+	margin:0;
+}
+
+.text-box .title {
+	font-size:18px;
+	font-weight:600;
+	color:#428bca;
+	padding:0;
+	margin:0;
+}
+
+.text-box .description {
+	font-size:15px;
+	color:#333;
+	padding:0;
+	margin:0;
+}
+
+@media only screen and (max-width:479px) {
+
+.img-box div {
+	min-height:80px;
+}
+
+.text-box {
+	margin-left:10px;
+	line-height:1.5;
+}
+
+.text-box .title {
+	font-size:13px;
+	margin:0;
+}
+
+.text-box .description {
+	font-size:11px;
+	margin-top:5px;
+}
+}
